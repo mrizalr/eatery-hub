@@ -1,0 +1,12 @@
+{
+    "server" : {
+        "port":8000,
+        "jwtsecretkey":"e4t3ry-hub-s3cr3t"
+    },
+    "mysql" : {
+        "user" : "root",
+        "password" : "",
+        "port" : 2252,
+        "dbname" : "eatery_hub"
+    }
+}
