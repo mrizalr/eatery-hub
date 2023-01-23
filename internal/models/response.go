@@ -37,3 +37,12 @@ func ResponseBadGateway(errors interface{}) *Response {
 		Data:   nil,
 	}
 }
+
+func ResponseUnauthorized(errors interface{}) *Response {
+	return &Response{
+		Code:   fiber.StatusUnauthorized,
+		Status: "UNAUTHORIZED",
+		Errors: errors,
+		Data:   nil,
+	}
+}

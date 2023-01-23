@@ -7,4 +7,5 @@ import (
 
 type UserUsecase interface {
 	Register(user models.User) (uuid.UUID, error)
+	Login(user models.User) (models.UserWithToken, error)
 }

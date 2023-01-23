@@ -9,9 +9,10 @@ import (
 )
 
 func NewMysqlDB(c *config.Config) (*gorm.DB, error) {
-	dsn := fmt.Sprintf("%s:%s@tcp(127.0.0.1:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local",
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		c.Mysql.User,
 		c.Mysql.Password,
+		c.Mysql.Host,
 		c.Mysql.Port,
 		c.Mysql.DBname,
 	)

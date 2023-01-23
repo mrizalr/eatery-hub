@@ -7,4 +7,6 @@ import (
 
 type MysqlRepository interface {
 	Create(user models.User) (uuid.UUID, error)
+	FindByID(userID uuid.UUID) (models.User, error)
+	FindByUsername(username string) (models.User, error)
 }

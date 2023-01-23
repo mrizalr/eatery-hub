@@ -18,6 +18,7 @@ type ServerConfig struct {
 }
 
 type MysqlConfig struct {
+	Host     string
 	User     string
 	Password string
 	Port     int

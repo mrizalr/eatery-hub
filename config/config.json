@@ -1,12 +1,13 @@
 {
-    "server" : {
-        "port":8000,
-        "jwtsecretkey":"e4t3ry-hub-s3cr3t"
+    "server": {
+        "port": 8000,
+        "jwtsecretkey": "e4t3ry-hub-s3cr3t"
     },
-    "mysql" : {
-        "user" : "root",
-        "password" : "",
-        "port" : 2252,
-        "dbname" : "eatery_hub"
+    "mysql": {
+        "host": "sql.freedb.tech",
+        "user": "freedb_rizal",
+        "password": "s@*Y4uQZ4jx#Ux9",
+        "port": 3306,
+        "dbname": "freedb_eatery-hub"
     }
 }
